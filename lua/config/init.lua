@@ -1,6 +1,5 @@
 -- basic
 require("config.options")
-require("config.commands")
 require("config.remaps")
 
 -- lsp

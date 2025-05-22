@@ -1,3 +1,5 @@
+require('config.commands.utils.HighlightSubstrMatches')
+
 function ProjectSearch()
   local pattern = vim.fn.input("grep pattern: ")
   if pattern == "" then return end
@@ -7,6 +9,7 @@ function ProjectSearch()
   if #vim.fn.getqflist() > 0 then
     vim.cmd("copen")
 	vim.fn.clearmatches()
+	HighlightSubstrMatches(pattern)
   else
     print("no results")
   end
