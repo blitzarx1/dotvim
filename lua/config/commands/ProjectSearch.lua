@@ -9,6 +9,7 @@ function ProjectSearch()
   if #vim.fn.getqflist() > 0 then
     vim.cmd("copen")
 	vim.fn.clearmatches()
+	vim.cmd('nohlsearch')
 	HighlightSubstrMatches(pattern)
   else
     print("no results")

@@ -1,15 +1,15 @@
 -- basic
-require("config.options")
-require("config.remaps")
+require('config.options')
+require('config.remaps')
 
 -- lsp
-require("config.lsp")
+require('config.lsp')
 
 -- colorscheme
-require("config.color")
+require('config.color')
 
 -- other plugins
-require("config.treesitter")
-require("config.gitsigns")
-require("config.cmp")
+require('config.treesitter')
+require('config.gitsigns')
+require('config.cmp')
 

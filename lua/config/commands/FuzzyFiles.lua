@@ -93,6 +93,7 @@ local function show_quickfix(paths)
   vim.fn.setqflist(qf)
   vim.cmd('copen')
   vim.fn.clearmatches()
+  vim.cmd('nohlsearch')
 end
 
 function FuzzyFiles(pattern)
