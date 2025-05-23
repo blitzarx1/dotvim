@@ -2,6 +2,11 @@
 require('config.options')
 require('config.remaps')
 
+-- commands
+require('config.commands.Fmt')
+require('config.commands.FuzzyFiles')
+require('config.commands.ProjectSearch')
+
 -- lsp
 require('config.lsp')
 
